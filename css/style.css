@@ -224,3 +224,21 @@ header .container .menu .main-menu .login-btn {
     display: block;
   }
 }
+
+.partners .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 100%;
+}
+@media (max-width: 786px) {
+  .partners .container {
+    max-width: calc(33.33% - 10px);
+  }
+}
+.partners .container img {
+  max-width: calc(30% - 10px); /* 20% width with some spacing between images */
+  margin-bottom: 10px;
+}

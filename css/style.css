@@ -228,17 +228,20 @@ header .container .menu .main-menu .login-btn {
 .partners .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
-  max-width: 100%;
+  align-items: center;
 }
-@media (max-width: 786px) {
+@media (min-width: 1400px) {
   .partners .container {
-    max-width: calc(33.33% - 10px);
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .partners .container img {
+    padding-right: 50px;
   }
 }
 .partners .container img {
-  max-width: calc(30% - 10px); /* 20% width with some spacing between images */
-  margin-bottom: 10px;
+  padding-right: 0;
 }

@@ -67,6 +67,12 @@ html, body {
   color: #DBDAD5;
 }
 
+.red-section-title {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -313,7 +319,7 @@ header .container .menu .main-menu .login-btn {
 .futures .container .futures-text-block .content-text p {
   color: #F94D1C;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media (min-width: 1200px) {
   .futures .container .futures-text-block .content-text h2 {
@@ -386,82 +392,81 @@ header .container .menu .main-menu .login-btn {
 }
 
 .about .container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
   padding-bottom: 40px;
 }
-@media (min-width: 786px) {
+@media (min-width: 992px) {
   .about .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: left;
     padding-top: 60px;
   }
 }
 @media (min-width: 1200px) {
   .about .container {
-    gap: 250px;
-  }
-}
-@media (min-width: 992px) {
-  .about .container {
-    gap: 100px;
+    gap: 180px;
   }
 }
 .about .container .img-container {
   position: relative;
-  padding-top: 10px;
 }
 .about .container .img-container img {
   max-width: 100%;
   height: auto;
   padding-bottom: 10px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .about .container .img-container {
     display: inline-block;
   }
   .about .container .img-container img {
-    width: 533px; /* Set the desired width */
-    height: 615px; /* Set the desired height */
-    max-width: none; /* Remove the max-width */
-  }
-}
-@media (min-width: 1200px) {
-  .about .container .img-container .quote {
-    width: 368px;
-    height: 180px;
-    top: 400px;
-    left: -55px;
-  }
-  .about .container .img-container .quote #samantha {
-    font-size: 20px;
-  }
-  .about .container .img-container .quote p {
-    font-size: 16px;
-  }
-  .about .container .img-container .quote .colored-word {
-    font-size: 16px;
+    width: 533px;
+    height: 615px;
+    max-width: none;
+    margin-left: 55px;
   }
 }
 .about .container .img-container .quote {
-  max-width: 100%;
   height: auto;
-  position: absolute;
   display: block;
   background-color: #BEEBFF;
   padding: 20px;
 }
+@media (min-width: 992px) {
+  .about .container .img-container .quote {
+    position: absolute;
+  }
+}
+@media (min-width: 992px) {
+  .about .container .img-container .quote {
+    width: 368px;
+    height: 180px;
+    top: 385px;
+  }
+}
 .about .container .img-container .quote #samantha {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   color: #191919;
 }
+@media (min-width: 1200px) {
+  .about .container .img-container .quote #samantha {
+    font-size: 16px;
+  }
+}
 .about .container .img-container .quote p {
-  font-size: 12px;
+  font-size: 16px;
   color: #6e6a6a;
   font-weight: 500;
 }
 .about .container .img-container .quote .colored-word {
-  font-size: 14px;
+  font-size: 18px;
   color: #F94D1C;
   font-weight: 700;
 }
@@ -472,28 +477,31 @@ header .container .menu .main-menu .login-btn {
   font-family: "DM Sans", sans-serif;
   font-size: 32px;
   font-weight: 700;
-}
-.about .container .content #about-company-text {
-  color: #F94D1C;
-  font-size: 14px;
-  font-weight: 500;
-}
-.about .container .content p {
-  font-size: 12px;
-  color: #6e6a6a;
-  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (min-width: 992px) {
   .about .container .content h2 {
     font-size: 45px;
     padding-bottom: 20px;
+    padding-top: 0;
   }
+}
+.about .container .content #about-company-text {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+@media (min-width: 992px) {
   .about .container .content #about-company-text {
-    font-size: 18px;
+    padding-top: 0;
   }
-  .about .container .content p {
-    font-size: 16px;
-  }
+}
+.about .container .content p {
+  font-size: 16px;
+  color: #6e6a6a;
+  padding-right: 10px;
 }
 .about .container .content .buttons {
   display: flex;
@@ -524,11 +532,16 @@ header .container .menu .main-menu .login-btn {
   .about .container .content .buttons {
     justify-content: space-between;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     gap: 20px;
   }
   .about .container .content .buttons .btn-play {
     padding-top: 0;
+    justify-content: left;
+  }
+}
+@media (min-width: 1200px) {
+  .about .container .content .buttons {
     justify-content: left;
   }
 }

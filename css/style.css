@@ -73,6 +73,12 @@ html, body {
   font-weight: 500;
 }
 
+.box-title-font {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -273,7 +279,7 @@ header .container .menu .main-menu .login-btn {
 }
 
 .futures {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .futures .container {
   max-width: 1520px;
@@ -313,17 +319,13 @@ header .container .menu .main-menu .login-btn {
 .futures .container .futures-text-block .content-text h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 30px;
-  padding-bottom: 20px;
   font-weight: 700;
-}
-.futures .container .futures-text-block .content-text p {
-  color: #F94D1C;
-  font-size: 18px;
-  font-weight: 500;
+  padding-bottom: 20px;
 }
 @media (min-width: 1200px) {
   .futures .container .futures-text-block .content-text h2 {
     font-size: 45px;
+    padding-bottom: 30px;
   }
 }
 .futures .container .futures-boxes {
@@ -381,13 +383,13 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .futures .container .futures-boxes .box-content i {
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .futures .container .futures-boxes .box-content i {
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: 30px;
+    padding-bottom: 25px;
   }
 }
 
@@ -397,15 +399,16 @@ header .container .menu .main-menu .login-btn {
   align-items: center;
   text-align: center;
   gap: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 @media (min-width: 992px) {
   .about .container {
     display: flex;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: flex-start;
     text-align: left;
-    padding-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -543,5 +546,95 @@ header .container .menu .main-menu .login-btn {
 @media (min-width: 1200px) {
   .about .container .content .buttons {
     justify-content: left;
+  }
+}
+
+.services {
+  background-color: #F0EFE9;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.services .container {
+  display: block;
+}
+.services .container p {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .services .container p {
+    text-align: left;
+  }
+}
+.services .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .services .container h2 {
+    text-align: left;
+  }
+}
+.services .container .services-boxes {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  gap: 40px;
+}
+@media (min-width: 992px) {
+  .services .container .services-boxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.services .container .services-boxes #box-yellow {
+  background-color: #F9D783;
+}
+.services .container .services-boxes .box-content {
+  display: block;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+.services .container .services-boxes .box-content h4 {
+  padding-top: 20px;
+}
+.services .container .services-boxes .box-content .left-content {
+  flex-grow: 1;
+}
+.services .container .services-boxes .box-content .left-content i {
+  font-size: 40px;
+  padding-top: 20px;
+}
+.services .container .services-boxes .box-content .right-content {
+  text-align: right;
+}
+.services .container .services-boxes .box-content .right-content i {
+  font-size: 56px;
+  background-color: transparent;
+  color: #191919;
+}
+.services .container .services-boxes .box-content .right-content a :hover {
+  color: #b1afaf;
+}
+.services .container .services-boxes .box-content .right-content #a-vit :hover {
+  color: #ffffff;
+}
+.services .container .button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.services .container .button a {
+  flex: 1;
+}
+@media (min-width: 992px) {
+  .services .container .button {
+    display: block;
+    align-items: center;
   }
 }

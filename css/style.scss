@@ -841,8 +841,72 @@ header{
     
 }
 
+.testimonial{
+    background-color: #EDCF87;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .container{
+        padding: 80px;
+        background-color: #ffffff; 
+        text-align: center;
+       h2{
+        padding-bottom: 30px;
+       }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+            @media (min-width:1200px){
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .box{
+                
+                display: block;
+                justify-content: center;
+                padding: 20px;
+                p{
+                    font-size: 18px;
+                    letter-spacing: -0.2px;
+                }
+                .stars{
+                    padding-bottom: 26px;
+                    
+                    color: #F94D1C;
+                }
+                .customer {
+                    display: block;
+                    padding-top: 30px;
+                    img {
+                       padding-right: 8px;
+                        
+                    }
+
+                    @media (min-width:1200px){
+                        display: flex;
+                        justify-content: left;
+                        align-items: left;
+                    }
+
+                    .content{
+                        display: block;
+                        p{font-size: 16px;}
+                        
+                    }
+                }
+            }
+           
+        }  
+    }
+}
+
 .article-news{
     .container{
+        padding-top: 40px;
         padding-bottom: 40px;
         display: block;
         
@@ -917,6 +981,21 @@ header{
                 }
             }
         }
+        .dots {
+            
+            text-align: center; 
+            font-size: 12px;
+            a {color: #6e6a6a;}
+            .active{
+                color: #191919;
+            }
+            a :hover{
+                color: #191919; 
+                
+            }
+        }
     }
 }
+
+
 

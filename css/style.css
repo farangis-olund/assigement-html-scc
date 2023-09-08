@@ -785,7 +785,68 @@ header .container .menu .main-menu .login-btn {
   }
 }
 
+.testimonial {
+  background-color: #EDCF87;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.testimonial .container {
+  padding: 80px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.testimonial .container h2 {
+  padding-bottom: 30px;
+}
+.testimonial .container .boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+@media (min-width: 1200px) {
+  .testimonial .container .boxes {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.testimonial .container .boxes .box {
+  display: block;
+  justify-content: center;
+  padding: 20px;
+}
+.testimonial .container .boxes .box p {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+.testimonial .container .boxes .box .stars {
+  padding-bottom: 26px;
+  color: #F94D1C;
+}
+.testimonial .container .boxes .box .customer {
+  display: block;
+  padding-top: 30px;
+}
+.testimonial .container .boxes .box .customer img {
+  padding-right: 8px;
+}
+@media (min-width: 1200px) {
+  .testimonial .container .boxes .box .customer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+}
+.testimonial .container .boxes .box .customer .content {
+  display: block;
+}
+.testimonial .container .boxes .box .customer .content p {
+  font-size: 16px;
+}
+
 .article-news .container {
+  padding-top: 40px;
   padding-bottom: 40px;
   display: block;
 }
@@ -858,4 +919,17 @@ header .container .menu .main-menu .login-btn {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
+}
+.article-news .container .dots {
+  text-align: center;
+  font-size: 12px;
+}
+.article-news .container .dots a {
+  color: #6e6a6a;
+}
+.article-news .container .dots .active {
+  color: #191919;
+}
+.article-news .container .dots a :hover {
+  color: #191919;
 }

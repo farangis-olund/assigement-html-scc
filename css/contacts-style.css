@@ -1,0 +1,113 @@
+.showcase-contacts {
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+.showcase-contacts .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.showcase-contacts .container .nav-contact {
+  display: flex;
+}
+.showcase-contacts .container .nav-contact a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: #6e6a6a;
+  z-index: 2;
+}
+.showcase-contacts .container .nav-contact a.active {
+  color: #191919;
+  font-weight: bold;
+}
+.showcase-contacts .container .nav-contact a:hover {
+  color: #191919;
+  font-weight: bold;
+}
+
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.contacts .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .contacts .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+.contacts .container .box {
+  display: flex;
+  border: 1px solid #DBDAD5;
+  padding: 50px 120px 40px 60px;
+}
+@media (min-width: 992px) {
+  .contacts .container .box {
+    padding: 50px 30px 40px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts .container .box {
+    padding: 50px 60px 40px 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .contacts .container .box {
+    padding: 50px 120px 40px 60px;
+  }
+}
+.contacts .container .box i {
+  font-size: 55px;
+  padding-right: 15px;
+}
+.contacts .container .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.contacts .container .box .content p {
+  margin-bottom: 1px;
+}
+
+.contacts-form {
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+.contacts-form .container {
+  background-color: #DBDAD5;
+  padding: 40px 40px 80px 40px;
+  text-align: center;
+}
+.contacts-form .container .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .contacts-form .container .button {
+    padding-left: 153px;
+    padding-right: 146px;
+  }
+}
+.contacts-form .container .button input, .contacts-form .container .button textarea {
+  position: relative;
+  border-radius: 35px;
+  border: none;
+  text-align: left;
+  padding: 15px 30px;
+  width: 100%;
+}

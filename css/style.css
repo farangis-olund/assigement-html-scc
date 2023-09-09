@@ -241,8 +241,6 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .showcase .container .content p {
-  font-size: 16px;
-  color: rgba(25, 25, 25, 0.7);
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 10px;
@@ -255,16 +253,23 @@ header .container .menu .main-menu .login-btn {
     padding-right: 0;
   }
 }
-.showcase .container .content a {
+.showcase .container .content .button {
   margin-right: 0;
-  display: block;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 20px;
 }
-@media (min-width: 786px) {
-  .showcase .container .content a {
-    display: inline-block;
-    margin-right: 10px;
+@media (min-width: 1200px) {
+  .showcase .container .content .button {
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
   }
+}
+.showcase .container .content .button a {
+  z-index: 2;
 }
 .showcase .container img {
   display: none;
@@ -279,11 +284,13 @@ header .container .menu .main-menu .login-btn {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
 }
-.showcase .decoration img {
-  flex: 0.2;
+@media (min-width: 1200px) {
+  .showcase .decoration {
+    display: flex;
+    z-index: 1;
+  }
 }
 
 .partners .container {
@@ -700,8 +707,13 @@ header .container .menu .main-menu .login-btn {
   position: absolute;
   bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .services .decoration {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .services .decoration img {
   flex: 0.2;
@@ -1099,6 +1111,13 @@ header .container .menu .main-menu .login-btn {
   align-items: center;
   margin-right: 0;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .footer .container .logo {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
 }
 .footer .container .logo p {
   padding-top: 29px;

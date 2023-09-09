@@ -1029,3 +1029,62 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
   }
 }
+
+.footer {
+  padding-top: 80px;
+  background-color: #0E1021;
+  padding-bottom: 80px;
+}
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 105px;
+  color: #ffffff;
+}
+.footer .container .logo {
+  flex: 0.4;
+  margin-right: 60px;
+}
+.footer .container .logo p {
+  padding-top: 29px;
+}
+.footer .container .content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 30px;
+  padding-top: 25px;
+}
+.footer .container .content .box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .container .content .box h4 {
+  padding-bottom: 10px;
+}
+.footer .container .content .box a {
+  text-decoration: none;
+  color: #b1afaf;
+  font-weight: 500;
+}
+
+.bootom-footer {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: #0E1021;
+  border: 1px solid #6e6a6a;
+}
+.bootom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  color: #b1afaf;
+}
+.bootom-footer .container .social-media a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+.bootom-footer .container .social-media a:hover {
+  color: #6e6a6a;
+}

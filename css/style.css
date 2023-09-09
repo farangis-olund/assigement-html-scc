@@ -207,6 +207,8 @@ header .container .menu .main-menu .login-btn {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
+  padding-bottom: 40px;
 }
 .showcase .container {
   display: flex;
@@ -272,6 +274,16 @@ header .container .menu .main-menu .login-btn {
   .showcase .container img {
     display: block;
   }
+}
+.showcase .decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.showcase .decoration img {
+  flex: 0.2;
 }
 
 .partners .container {
@@ -581,6 +593,7 @@ header .container .menu .main-menu .login-btn {
   background-color: #F0EFE9;
   padding-top: 80px;
   padding-bottom: 100px;
+  position: relative;
 }
 .services .container {
   display: block;
@@ -682,6 +695,16 @@ header .container .menu .main-menu .login-btn {
     display: block;
     align-items: center;
   }
+}
+.services .decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.services .decoration img {
+  flex: 0.2;
 }
 
 .why-choose-us {
@@ -994,16 +1017,19 @@ header .container .menu .main-menu .login-btn {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #DBDAD5;
+  position: relative;
 }
 .get-update .container {
   display: flex;
   flex-direction: column;
+  padding-right: 0;
 }
 @media (min-width: 1200px) {
   .get-update .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 40px;
   }
 }
 .get-update .container .button {
@@ -1031,11 +1057,25 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
   }
 }
+.get-update .decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.get-update .decoration img {
+  flex: 0.2;
+  margin-bottom: 28px;
+  width: 100px;
+  height: 58px;
+}
 
 .footer {
   padding-top: 80px;
   background-color: #0E1021;
   padding-bottom: 80px;
+  position: relative;
 }
 .footer .container {
   display: block;
@@ -1111,6 +1151,16 @@ header .container .menu .main-menu .login-btn {
 }
 .footer .container .content .box a:hover {
   color: #ffffff;
+}
+.footer .decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .decoration img {
+  flex: 0.2;
 }
 
 .bootom-footer {

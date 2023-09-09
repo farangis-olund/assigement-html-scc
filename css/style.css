@@ -5,6 +5,8 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 html h2, body h2 {
   font-family: "DM Sans", sans-serif;
@@ -1036,37 +1038,79 @@ header .container .menu .main-menu .login-btn {
   padding-bottom: 80px;
 }
 .footer .container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 105px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #ffffff;
+}
+@media (min-width: 992px) {
+  .footer .container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 105px;
+    align-items: left;
+    text-align: left;
+  }
 }
 .footer .container .logo {
   flex: 0.4;
-  margin-right: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  text-align: center;
 }
 .footer .container .logo p {
   padding-top: 29px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer .container .logo p {
+    text-align: left;
+    margin-right: 60px;
+  }
 }
 .footer .container .content {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 30px;
   padding-top: 25px;
+}
+@media (min-width: 992px) {
+  .footer .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    flex: 1;
+  }
 }
 .footer .container .content .box {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .footer .container .content .box {
+    padding-bottom: 0;
+  }
+  .footer .container .content .box h4 {
+    padding-bottom: 10px;
+  }
 }
 .footer .container .content .box h4 {
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 .footer .container .content .box a {
   text-decoration: none;
   color: #b1afaf;
   font-weight: 500;
+}
+.footer .container .content .box a:hover {
+  color: #ffffff;
 }
 
 .bootom-footer {
@@ -1077,8 +1121,17 @@ header .container .menu .main-menu .login-btn {
 }
 .bootom-footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: cemter;
   color: #b1afaf;
+}
+@media (min-width: 992px) {
+  .bootom-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .bootom-footer .container .social-media a {
   color: #ffffff;

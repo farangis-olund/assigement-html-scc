@@ -6,6 +6,8 @@ html, body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
     h2 {
         font-family: 'DM Sans', sans-serif;
         font-size: 45px;
@@ -1083,38 +1085,76 @@ header{
     background-color: #0E1021;
     padding-bottom: 80px;
     .container{
-       
-        display: flex;
-        justify-content: flex-start;
-        gap: 105px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         color: #ffffff;  
         
+        @media (min-width:992px) {
+            display: flex;
+            justify-content: flex-start;
+            gap: 105px;
+            align-items: left;
+            text-align: left;
+           
+        }
         .logo {
             flex: 0.4;
-            margin-right: 60px;
-            
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+            text-align: center;
             p{
                 padding-top: 29px;
-                
+                text-align: center;
+                @media (min-width:992px){
+                    text-align: left;
+                    margin-right: 60px;
+                }
             }
         }
         .content {
-            display: flex;
-            justify-content: space-between;
-            flex: 1;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
             gap:30px;
             padding-top: 25px;
+            
+            @media (min-width:992px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: left;
+                text-align: left;
+                flex: 1;
+            }
+
             .box{
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+                padding-bottom: 20px;
+                
+                @media (min-width:992px) {
+                    padding-bottom: 0;
+                    h4{
+                        padding-bottom: 10px;
+                    }
+                }
+                
                 h4{
-                    padding-bottom: 10px;
+                    padding-bottom: 0;
                 }
                 a {
                     text-decoration: none;
                     color: #b1afaf;
                     font-weight: 500;
+                    &:hover{
+                        color: #ffffff;
+                    }
+                    
                 }
             }
         }
@@ -1131,9 +1171,15 @@ header{
     border: 1px solid #6e6a6a;
     .container{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: cemter;
         color: #b1afaf;
-        
+        @media (min-width:992px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
         .social-media{
                                       
             a {

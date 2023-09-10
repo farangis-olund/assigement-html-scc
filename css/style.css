@@ -295,23 +295,18 @@ header .container .menu .main-menu .login-btn {
 
 .partners .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
   align-items: center;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .partners .container {
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
-  .partners .container img {
-    padding-right: 50px;
-  }
-}
-.partners .container img {
-  padding-right: 0;
 }
 
 .futures {
@@ -789,12 +784,19 @@ header .container .menu .main-menu .login-btn {
   flex-direction: column;
   justify-content: space-between;
 }
-.why-choose-us .container .content .boxes .box {
+.why-choose-us .container .content .boxes a {
+  text-decoration: none;
+  color: #191919;
+}
+.why-choose-us .container .content .boxes a :hover {
+  color: #6e6a6a;
+}
+.why-choose-us .container .content .boxes .list-box .box {
   display: flex;
   justify-content: center;
   padding-bottom: 8px;
 }
-.why-choose-us .container .content .boxes .box .circle {
+.why-choose-us .container .content .boxes .list-box .box .circle {
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -804,16 +806,16 @@ header .container .menu .main-menu .login-btn {
   justify-content: center;
   align-items: center;
 }
-.why-choose-us .container .content .boxes .box .circle i {
+.why-choose-us .container .content .boxes .list-box .box .circle i {
   font-size: 25px;
   text-align: center;
 }
-.why-choose-us .container .content .boxes .box .box-content h4 {
+.why-choose-us .container .content .boxes .list-box .box .box-content h4 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.why-choose-us .container .content .boxes .box .box-content p {
+.why-choose-us .container .content .boxes .list-box .box .box-content p {
   font-size: 16px;
   padding-bottom: 15px;
 }

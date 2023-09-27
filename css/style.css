@@ -37,7 +37,6 @@ html p, body p {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  margin: 0;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -125,12 +124,6 @@ html p, body p {
   background-color: #191919;
   border-color: #191919;
   color: #DBDAD5;
-}
-
-.box-title-font {
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
 }
 
 header {
@@ -375,7 +368,7 @@ header .container .menu .main-menu .login-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-: 10px;
+  padding: 10px;
 }
 .futures .container .futures-text-block a {
   text-align: center;
@@ -522,35 +515,13 @@ header .container .menu .main-menu .login-btn {
 .about .container .content {
   display: block;
 }
-.about .container .content h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-@media (min-width: 992px) {
-  .about .container .content h2 {
-    font-size: 45px;
-    padding-bottom: 20px;
-    padding-top: 0;
-  }
-}
-.about .container .content #about-company-text {
-  color: #F94D1C;
-  font-size: 18px;
-  font-weight: 500;
+.about .container .content .section-title {
   padding-top: 20px;
 }
 @media (min-width: 992px) {
-  .about .container .content #about-company-text {
+  .about .container .content .section-title {
     padding-top: 0;
   }
-}
-.about .container .content p {
-  font-size: 16px;
-  color: #6e6a6a;
-  padding-right: 10px;
 }
 .about .container .content .buttons {
   display: flex;

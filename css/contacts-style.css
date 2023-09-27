@@ -75,6 +75,9 @@
   margin-bottom: 1px;
 }
 
+.contacts {
+  padding-bottom: 80px;
+}
 .contacts .container {
   background-color: #F0EFE9;
   text-align: center;
@@ -84,20 +87,23 @@
     padding: 15px;
   }
 }
-.contacts .container #contact-form {
+.contacts .container h2 {
+  padding-bottom: 32px;
+}
+.contacts .container .contact-form {
   width: 900px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
-.contacts .container #contact-form .form-group {
+.contacts .container .contact-form .form-group {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
-.contacts .container #contact-form .form-group input,
-.contacts .container #contact-form .form-group textarea {
+.contacts .container .contact-form .form-group input,
+.contacts .container .contact-form .form-group textarea {
   border-radius: 35px;
   border: none;
   text-align: left;
@@ -105,12 +111,15 @@
   placeholder-color: #ccc;
 }
 @media (max-width: 768px) {
-  .contacts #contact-form {
+  .contacts .container .contact-form {
     max-width: 100%;
     padding: 10px;
   }
-  .contacts #contact-form input,
-  .contacts #contact-form textarea {
+  .contacts .container .contact-form input,
+  .contacts .container .contact-form textarea {
     padding: 10px;
   }
+}
+.contacts .container #btn-submit {
+  padding-top: 44px;
 }

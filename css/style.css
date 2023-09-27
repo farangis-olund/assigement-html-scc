@@ -23,8 +23,8 @@ html p, body p {
 }
 
 .section-padding {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (min-width: 768px) {
   .section-padding {
@@ -37,17 +37,21 @@ html p, body p {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   font-weight: 700;
+  margin: 0;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   .section-title h2 {
     font-size: 45px;
+    padding-bottom: 48px;
   }
 }
 .section-title p {
   color: #F94D1C;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 0;
+  padding-bottom: 18px;
 }
 
 .content-center {
@@ -121,12 +125,6 @@ html p, body p {
   background-color: #191919;
   border-color: #191919;
   color: #DBDAD5;
-}
-
-.red-section-title {
-  color: #F94D1C;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .box-title-font {
@@ -369,7 +367,7 @@ header .container .menu .main-menu .login-btn {
 }
 @media (min-width: 992px) {
   .futures .container {
-    grid-template-columns: 2.5fr 3fr 0.5fr;
+    grid-template-columns: 3fr 3.5fr 0.5fr;
     gap: 100px;
   }
 }
@@ -377,10 +375,7 @@ header .container .menu .main-menu .login-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-.futures .container .futures-text-block .section-title {
-  padding-bottom: 30px;
-  padding-top: 0;
+  padding-: 10px;
 }
 .futures .container .futures-text-block a {
   text-align: center;
@@ -388,7 +383,11 @@ header .container .menu .main-menu .login-btn {
 @media (min-width: 992px) {
   .futures .container .futures-text-block {
     text-align: left;
+    padding-right: 40px;
   }
+}
+.futures .container .futures-text-block h2 {
+  padding-bottom: 35px;
 }
 .futures .container .futures-boxes {
   display: block;
@@ -396,7 +395,7 @@ header .container .menu .main-menu .login-btn {
   padding-top: 40px;
   -moz-column-gap: 15px;
        column-gap: 15px;
-  row-gap: 15px;
+  row-gap: 20px;
 }
 @media (min-width: 768px) {
   .futures .container .futures-boxes {
@@ -413,6 +412,8 @@ header .container .menu .main-menu .login-btn {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: #191919;
 }
 @media (min-width: 768px) {
   .futures .container .futures-boxes .box-content {
@@ -420,6 +421,9 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
     align-items: flex-start;
   }
+}
+.futures .container .futures-boxes .box-content h4 {
+  padding-bottom: 7px;
 }
 .futures .container .futures-boxes .box-content i {
   padding-bottom: 28px;
@@ -433,6 +437,9 @@ header .container .menu .main-menu .login-btn {
   .futures .container .futures-boxes .box-content p {
     padding-bottom: 10px;
   }
+}
+.futures .container .futures-boxes .box-content:hover {
+  color: #b1afaf;
 }
 
 .about .container {
@@ -598,19 +605,23 @@ header .container .menu .main-menu .login-btn {
 .services .container {
   display: block;
 }
-.services .container p {
+.services .container .section-title {
+  padding-bottom: 48px;
+}
+.services .container .section-title p {
   text-align: center;
 }
 @media (min-width: 992px) {
-  .services .container p {
+  .services .container .section-title p {
     text-align: left;
   }
 }
-.services .container h2 {
+.services .container .section-title h2 {
   text-align: center;
+  padding: 0;
 }
 @media (min-width: 992px) {
-  .services .container h2 {
+  .services .container .section-title h2 {
     text-align: left;
   }
 }
@@ -755,11 +766,6 @@ header .container .menu .main-menu .login-btn {
     font-size: 45px;
   }
 }
-@media (min-width: 992px) {
-  .why-choose-us .container .content .section-title p {
-    padding-top: 0;
-  }
-}
 .why-choose-us .container .content .boxes {
   display: flex;
   flex-direction: column;
@@ -819,6 +825,11 @@ header .container .menu .main-menu .login-btn {
 .project-case .container .section-title {
   text-align: center;
 }
+@media (min-width: 992px) {
+  .project-case .container .section-title h2 {
+    padding-bottom: 90px;
+  }
+}
 .project-case .container .cases {
   display: grid;
   grid-template-columns: 1fr;
@@ -831,21 +842,23 @@ header .container .menu .main-menu .login-btn {
     padding: 0;
   }
 }
-.project-case .container .cases article {
+.project-case .container .cases .project {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  text-decoration: none;
+  color: #191919;
 }
-.project-case .container .cases article img {
+.project-case .container .cases .project img {
   width: 100%;
   height: auto;
 }
-.project-case .container .cases article h4 {
+.project-case .container .cases .project h4 {
   padding-top: 35px;
   padding-bottom: 16px;
   border-bottom: 1px solid #DBDAD5;
 }
-.project-case .container .cases article a {
+.project-case .container .cases .project .readmore {
   padding: 15px;
   display: block;
   text-align: right;
@@ -855,8 +868,11 @@ header .container .menu .main-menu .login-btn {
   font-size: 14px;
   font-weight: 500;
 }
-.project-case .container .cases article a i {
+.project-case .container .cases .project .readmore i {
   margin-left: 2px;
+}
+.project-case .container .cases .project:hover .readmore {
+  text-decoration: underline;
 }
 @media (min-width: 992px) {
   .project-case .container .content-center {
@@ -882,14 +898,13 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
   }
 }
-@media (min-width: 992px) {
-  .team-section .container .title .section-title {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
 .team-section .container .title .section-title h2 {
-  margin: 0;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .team-section .container .title .section-title h2 {
+    padding: 0;
+  }
 }
 .team-section .container .title .browse-team {
   margin-bottom: 15px;
@@ -972,26 +987,18 @@ header .container .menu .main-menu .login-btn {
     padding-right: 100px;
   }
 }
-.testimonial .container .section-title {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-@media (min-width: 992px) {
-  .testimonial .container .section-title {
-    padding-top: 20px;
-  }
-}
 .testimonial .container .boxes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 15px;
+  gap: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .testimonial .container .boxes {
     flex-direction: row;
     text-align: left;
+    gap: 35px;
   }
 }
 .testimonial .container .boxes .box {
@@ -999,7 +1006,7 @@ header .container .menu .main-menu .login-btn {
   height: auto;
   display: block;
   justify-content: center;
-  padding: 20px;
+  padding: 35px;
 }
 .testimonial .container .boxes .box p {
   font-size: 18px;
@@ -1087,7 +1094,12 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .article-news .container .title .section-title h2 {
-  padding-bottom: 20px;
+  padding-bottom: 48px;
+}
+@media (min-width: 992px) {
+  .article-news .container .title .section-title h2 {
+    padding: 0;
+  }
 }
 .article-news .container .title .browse-article {
   margin-bottom: 15px;
@@ -1098,7 +1110,7 @@ header .container .menu .main-menu .login-btn {
   align-items: center;
   text-align: center;
   gap: 30px;
-  padding-top: 35px;
+  padding-top: 43px;
 }
 @media (min-width: 992px) {
   .article-news .container .boxes {
@@ -1175,6 +1187,8 @@ header .container .menu .main-menu .login-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 107px;
+  padding-bottom: 107px;
 }
 @media (min-width: 1200px) {
   .get-update .container {
@@ -1184,7 +1198,12 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .get-update .container .section-title h2 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .get-update .container .section-title h2 {
+    padding: 0;
+  }
 }
 .get-update .container .button {
   display: flex;
@@ -1220,14 +1239,7 @@ header .container .menu .main-menu .login-btn {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50px;
-  height: auto;
   padding-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .get-update .decoration {
-    width: 100px;
-  }
 }
 @media (min-width: 1400px) {
   .get-update .decoration {

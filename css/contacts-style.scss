@@ -30,9 +30,8 @@
     }
 }
 
-.contacts{
-    padding-top: 100px;
-    padding-bottom: 40px;
+.contact-detail{
+    
     .container{
         display: flex;
         flex-direction: column;
@@ -50,8 +49,7 @@
         .box{
             display: flex;
             border: 1px solid #DBDAD5;
-            
-            padding: 50px 120px 40px 60px;
+            padding: 20px;
            
             @media (min-width:992px) {
                 padding: 50px 30px 40px 20px;
@@ -78,36 +76,51 @@
     }
 }
 
-.contacts-form{
-    padding-bottom: 80px;
-    padding-top: 40px;
-    
+.contacts{
+      
     .container{
-        background-color: #DBDAD5;
-        padding: 40px 40px 80px 40px;
+       background-color: #F0EFE9;
+       text-align: center;
         
-        text-align: center;
-        .button{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: center;
-            gap: 16px;
-            padding-left: 0;
-            padding-right: 0; 
-            @media (min-width:992px) {
-                padding-left: 153px;
-            padding-right: 146px; 
+        @media (max-width:768px) {
+            padding: 15px;
+        }
+       
+        #contact-form {
+            width: 900px; 
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            
+            .form-group {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+        
+                input,
+                textarea {
+                    border-radius: 35px;
+                    border: none;
+                    text-align: left;
+                    padding: 15px 30px;
+                    placeholder: {
+                        color: #ccc;
+                    }
+                }   
             }
-
-            input, textarea {
-                position: relative;
-                border-radius: 35px;
-                border: none;
-                text-align: left;
-                padding: 15px 30px;
-                width: 100%;
+        
+        }
+    }
+    @media (max-width:768px) {
+        #contact-form {
+            max-width: 100%;
+            padding: 10px; 
+            input,
+            textarea {
+                padding: 10px;
             }
+    
         }
     }
 }

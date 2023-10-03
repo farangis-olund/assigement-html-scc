@@ -26,7 +26,7 @@ html p, body p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -39,7 +39,7 @@ html p, body p {
   font-weight: 700;
   padding-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .section-title h2 {
     font-size: 45px;
     padding-bottom: 48px;
@@ -56,17 +56,16 @@ html p, body p {
 .content-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .content-center {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
 }
 
-.btn-transperent {
+.btn-yellow, .btn-black, .btn-transperent {
   background-color: transparent;
   border: 1px solid #191919;
   padding: 15px 30px;
@@ -75,55 +74,52 @@ html p, body p {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
 }
-.btn-transperent i {
+.btn-yellow i, .btn-black i, .btn-transperent i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-.btn-transperent:hover {
+.btn-yellow:hover, .btn-black:hover, .btn-transperent:hover {
   background-color: #191919;
   border-color: #191919;
   color: #DBDAD5;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-black {
   background-color: #191919;
-  border: 1px solid #191919;
-  padding: 15px 30px;
-  border-radius: 35px;
   color: #F0EFE9;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-}
-.btn-black i {
-  margin-left: 8px;
-  font-size: 0.9em;
 }
 .btn-black:hover {
   background-color: transparent;
-  border-color: #191919;
   color: #191919;
 }
 
 .btn-yellow {
   background-color: #F9D783;
-  border: 1px solid #F9D783;
-  padding: 15px 30px;
-  border-radius: 35px;
+  border-color: #F9D783;
   color: #191919;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-}
-.btn-yellow i {
-  margin-left: 8px;
-  font-size: 0.9em;
 }
 .btn-yellow:hover {
   background-color: #191919;
   border-color: #191919;
   color: #DBDAD5;
+}
+
+.decoration {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .decoration {
+    display: flex;
+    z-index: 1;
+  }
 }
 
 header {
@@ -288,22 +284,10 @@ header .container .menu .main-menu .login-btn {
     padding: 40px 0px 40px 0px;
   }
 }
-.showcase .container .content .button {
-  display: flex;
-  flex-direction: column;
+.showcase .container .content .content-center {
   gap: 20px;
 }
-@media (min-width: 1200px) {
-  .showcase .container .content .button {
-    flex-direction: row;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    margin-right: 0;
-    padding-bottom: 20px;
-  }
-}
-.showcase .container .content .button a {
+.showcase .container .content .content-center a {
   z-index: 2;
 }
 .showcase .container img {
@@ -316,16 +300,7 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .showcase .decoration {
-  position: absolute;
-  bottom: 0;
   left: 0;
-  display: none;
-}
-@media (min-width: 1200px) {
-  .showcase .decoration {
-    display: flex;
-    z-index: 1;
-  }
 }
 
 .partners .container {
@@ -672,19 +647,12 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .services .decoration {
-  position: absolute;
-  bottom: 0;
   right: 0;
-  display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .services .decoration {
     display: flex;
-    justify-content: flex-end;
   }
-}
-.services .decoration img {
-  flex: 0.2;
 }
 
 .why-choose-us {
@@ -755,9 +723,9 @@ header .container .menu .main-menu .login-btn {
   padding-bottom: 8px;
 }
 .why-choose-us .container .content .boxes .list-box .box .circle {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  margin-right: 0;
   border: 2px solid #F0EFE9;
   border-radius: 50%;
   display: flex;
@@ -765,8 +733,20 @@ header .container .menu .main-menu .login-btn {
   align-items: center;
 }
 .why-choose-us .container .content .boxes .list-box .box .circle i {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
+}
+@media (min-width: 576px) {
+  .why-choose-us .container .content .boxes .list-box .box .circle i {
+    font-size: 25px;
+  }
+}
+@media (min-width: 576px) {
+  .why-choose-us .container .content .boxes .list-box .box .circle {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+  }
 }
 .why-choose-us .container .content .boxes .list-box .box .box-content h4 {
   font-family: "DM Sans", sans-serif;
@@ -861,12 +841,18 @@ header .container .menu .main-menu .login-btn {
   text-align: center;
   gap: 30px;
 }
+@media (min-width: 768px) {
+  .team-section .container .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
 @media (min-width: 992px) {
   .team-section .container .title {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    text-align: left;
   }
 }
 .team-section .container .title .section-title h2 {
@@ -875,13 +861,12 @@ header .container .menu .main-menu .login-btn {
 @media (min-width: 992px) {
   .team-section .container .title .section-title h2 {
     padding: 0;
+    margin: 0;
   }
 }
-.team-section .container .title .browse-team {
-  margin-bottom: 15px;
-}
-.team-section .container .title .browse-team .btn-yellow {
-  border: 1px solid #191919;
+.team-section .container .title .content-center {
+  display: flex;
+  flex-direction: column;
 }
 .team-section .container .team-members {
   display: flex;
@@ -890,13 +875,20 @@ header .container .menu .main-menu .login-btn {
   align-items: center;
   text-align: center;
   gap: 10px;
+  padding-top: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .team-section .container .team-members {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .team-section .container .team-members {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: left;
   }
 }
 .team-section .container .team-members .member {
@@ -1029,16 +1021,6 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
   }
 }
-.testimonial .container .content-center {
-  padding-top: 20px;
-}
-@media (min-width: 992px) {
-  .testimonial .container .content-center {
-    display: block;
-    align-items: center;
-    padding-top: 70px;
-  }
-}
 
 .article-news .container {
   display: block;
@@ -1113,14 +1095,9 @@ header .container .menu .main-menu .login-btn {
   width: 56px;
   height: 64px;
   background-color: #F9D783;
-  left: 12%;
+  left: 8%;
   top: 16px;
   padding: 10px 11px 8px 14px;
-}
-@media (min-width: 768px) {
-  .article-news .container .boxes .box .img-content .calendar {
-    left: 22%;
-  }
 }
 @media (min-width: 992px) {
   .article-news .container .boxes .box .img-content .calendar {
@@ -1176,19 +1153,10 @@ header .container .menu .main-menu .login-btn {
     padding: 0;
   }
 }
-.get-update .container .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.get-update .container .content-center {
   gap: 16px;
-  text-align: center;
 }
-@media (min-width: 1200px) {
-  .get-update .container .button {
-    display: block;
-  }
-}
-.get-update .container .button input {
+.get-update .container .content-center input {
   border-radius: 35px;
   border: none;
   text-align: center;
@@ -1197,24 +1165,21 @@ header .container .menu .main-menu .login-btn {
   margin-right: 0;
 }
 @media (min-width: 1200px) {
-  .get-update .container .button input {
+  .get-update .container .content-center input {
     width: 308px;
     text-align: left;
     margin-right: 16px;
   }
 }
-.get-update .container .button input:hover {
+.get-update .container .content-center input:hover {
   background-color: #f4f4f4;
 }
 .get-update .decoration {
-  position: absolute;
-  bottom: 0;
   right: 0;
   padding-bottom: 10px;
 }
 @media (min-width: 1400px) {
   .get-update .decoration {
-    width: auto;
     padding-bottom: 58px;
   }
 }
@@ -1306,14 +1271,7 @@ header .container .menu .main-menu .login-btn {
   color: #ffffff;
 }
 .footer .decoration {
-  position: absolute;
-  bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-.footer .decoration img {
-  flex: 0.2;
 }
 
 .bootom-footer {

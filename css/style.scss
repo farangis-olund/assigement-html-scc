@@ -120,6 +120,13 @@ html, body {
     color: #191919;
 }
 
+%hover-effect {
+    &:hover {
+        transform: scale(1.05);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+}
+
 .decoration {
     position: absolute;
     bottom: 0; 
@@ -657,9 +664,7 @@ header {
                     }
                 }
                 
-                :hover{
-                    color: #b1afaf;    
-                }
+                @extend %hover-effect;
                 
                 &:hover .right-content {
                     color: #b1afaf;  
@@ -964,12 +969,8 @@ header {
                     margin-top: -5px;
                     color:#6e6a6a
                 }
-                &:hover h4 {
-                    color: #b1afaf;
-                }
-                &:hover img {
-                    opacity: 0.8;
-                }
+                
+                @extend %hover-effect;
             }
 
         }
@@ -989,7 +990,6 @@ header {
     }
 
 }
-
 
 .testimonial {
     background-color: #EDCF87;
@@ -1081,10 +1081,7 @@ header {
                         }   
                     }
                 }
-                &:hover {
-                    background-color: #edebeb;
-                    color: #6e6a6a;
-                }
+                @extend %hover-effect;
                 cursor: pointer;
             }
            
@@ -1181,17 +1178,11 @@ header {
                     }
                 }
 
-                .text-content {
-                    p {
-                        padding-top: 28px;
-                    }
+                .subtitle {
+                   padding-top: 28px;   
                 }
-                :hover{
-                    color: #b1afaf;    
-                }
-                &:hover img {
-                    opacity: 0.8;  
-                }
+                
+                @extend %hover-effect;
             }
         }
 
@@ -1214,7 +1205,7 @@ header {
     }
 }
 
-.get-update{
+.get-update {
     background-color: #DBDAD5;
     position: relative;
     
@@ -1259,8 +1250,9 @@ header {
                     text-align: left;
                     margin-right: 16px;
                 }
+                
                 &:hover {
-                    background-color: #f4f4f4;
+                    background-color: #efefef;
                 }
             }
         }

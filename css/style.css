@@ -954,6 +954,7 @@ header .container .menu .main-menu .login-btn {
     flex-direction: row;
     text-align: left;
     gap: 35px;
+    padding-bottom: 40px;
   }
 }
 .testimonial .container .boxes .box {
@@ -962,6 +963,9 @@ header .container .menu .main-menu .login-btn {
   display: block;
   justify-content: center;
   padding: 35px;
+  text-decoration: none;
+  color: #191919;
+  cursor: pointer;
 }
 .testimonial .container .boxes .box p {
   font-size: 18px;
@@ -1012,6 +1016,10 @@ header .container .menu .main-menu .login-btn {
     align-items: flex-start;
     text-align: left;
   }
+}
+.testimonial .container .boxes .box:hover {
+  background-color: #edebeb;
+  color: #6e6a6a;
 }
 
 .article-news .container {
@@ -1067,6 +1075,8 @@ header .container .menu .main-menu .login-btn {
 }
 .article-news .container .boxes .box {
   display: block;
+  text-decoration: none;
+  color: #191919;
 }
 .article-news .container .boxes .box .img-content {
   position: relative;
@@ -1103,6 +1113,12 @@ header .container .menu .main-menu .login-btn {
 }
 .article-news .container .boxes .box .text-content p {
   padding-top: 28px;
+}
+.article-news .container .boxes .box :hover {
+  color: #b1afaf;
+}
+.article-news .container .boxes .box:hover img {
+  opacity: 0.8;
 }
 .article-news .container .dots {
   padding-top: 60px;

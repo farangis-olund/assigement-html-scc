@@ -1009,20 +1009,22 @@ header {
             justify-content: center;
             text-align: center;
             gap: 0;
-            
+           
             @media (min-width:992px) {
                 flex-direction: row;
                 text-align: left;
                 gap: 35px;
+                padding-bottom: 40px;
             }
 
-            .box{
+            .box {
                 width: 100%;
                 height: auto;
                 display: block;
                 justify-content: center;
                 padding: 35px;
-                
+                text-decoration: none;
+                color: #191919;
                 p {
                     font-size: 18px;
                     letter-spacing: -0.2px;
@@ -1071,6 +1073,11 @@ header {
                         }   
                     }
                 }
+                &:hover {
+                    background-color: #edebeb;
+                    color: #6e6a6a;
+                }
+                cursor: pointer;
             }
            
         }
@@ -1130,6 +1137,8 @@ header {
         
             .box {
                display: block;
+               text-decoration: none;
+               color: #191919;
                 .img-content {
                     position: relative;
                     display: block;
@@ -1168,6 +1177,12 @@ header {
                     p {
                         padding-top: 28px;
                     }
+                }
+                :hover{
+                    color: #b1afaf;    
+                }
+                &:hover img {
+                    opacity: 0.8;  
                 }
             }
         }

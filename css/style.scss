@@ -740,63 +740,64 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                a{
+               
+                .box {
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 8px;
                     text-decoration: none;
                     color: #191919;
-                    :hover{
-                        color: #6e6a6a;
-                    }
-                }
-                .list-box{
-                   
-                    .box{
-                        display: flex;
+                    .circle{
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 0;
+                        border: 2px solid #F0EFE9; 
+                        border-radius: 50%;
+                        display: flex; 
                         justify-content: center;
-                        padding-bottom: 8px;
-                        
-                        .circle{
-                            width: 50px;
-                            height: 50px;
-                            margin-right: 0;
-                            border: 2px solid #F0EFE9; 
-                            border-radius: 50%;
-                            display: flex; 
-                            justify-content: center;
-                            align-items: center; 
-                            i {
-                                font-size: 20px;
-                                text-align: center;
-                                @media (min-width:576px) {
-                                    font-size: 25px;
-                                }
-                            
-                            }
-                            
+                        align-items: center; 
+                        i {
+                            font-size: 20px;
+                            text-align: center;
                             @media (min-width:576px) {
-                                margin-right: 20px;
-                                width: 60px;
-                                height: 60px;
+                                font-size: 25px;
                             }
+                        
                         }
-
+                        
+                        @media (min-width:576px) {
+                            margin-right: 20px;
+                            width: 60px;
+                            height: 60px;
+                        }
                     
-                        .box-content {
-                            h4 {
-                                font-family: 'DM Sans', sans-serif;
-                                font-size: 22px;
-                                font-weight: 700;
-                            }
-                            p{
-                                font-size: 16px;
-                                padding-bottom: 15px;
-            
-                            }
-                            
-                        }
-
                     }
+                
+                    .box-content {
+                        h4 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+                        p{
+                            font-size: 16px;
+                            padding-bottom: 15px;
+        
+                        }
+                        
+                    }
+
+                    &:hover {
+                        .circle {
+                            background-color:#b1afaf; 
+                        }
+                
+                        .box-content {
+                            color: #b1afaf; 
+                        }
+                    }
+
                 }
-               
             }  
         }
     }
@@ -944,7 +945,8 @@ header {
             
             .member {
                 padding-top: 20px;
-                
+                text-decoration: none;
+                color: #191919;
                 @media (min-width:992px) {
                     padding-top: 95px;
                 }
@@ -961,6 +963,12 @@ header {
                 p {
                     margin-top: -5px;
                     color:#6e6a6a
+                }
+                &:hover h4 {
+                    color: #b1afaf;
+                }
+                &:hover img {
+                    opacity: 0.8;
                 }
             }
 

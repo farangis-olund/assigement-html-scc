@@ -700,19 +700,14 @@ header .container .menu .main-menu .login-btn {
   flex-direction: column;
   justify-content: space-between;
 }
-.why-choose-us .container .content .boxes a {
-  text-decoration: none;
-  color: #191919;
-}
-.why-choose-us .container .content .boxes a :hover {
-  color: #6e6a6a;
-}
-.why-choose-us .container .content .boxes .list-box .box {
+.why-choose-us .container .content .boxes .box {
   display: flex;
   justify-content: center;
   padding-bottom: 8px;
+  text-decoration: none;
+  color: #191919;
 }
-.why-choose-us .container .content .boxes .list-box .box .circle {
+.why-choose-us .container .content .boxes .box .circle {
   width: 50px;
   height: 50px;
   margin-right: 0;
@@ -722,30 +717,36 @@ header .container .menu .main-menu .login-btn {
   justify-content: center;
   align-items: center;
 }
-.why-choose-us .container .content .boxes .list-box .box .circle i {
+.why-choose-us .container .content .boxes .box .circle i {
   font-size: 20px;
   text-align: center;
 }
 @media (min-width: 576px) {
-  .why-choose-us .container .content .boxes .list-box .box .circle i {
+  .why-choose-us .container .content .boxes .box .circle i {
     font-size: 25px;
   }
 }
 @media (min-width: 576px) {
-  .why-choose-us .container .content .boxes .list-box .box .circle {
+  .why-choose-us .container .content .boxes .box .circle {
     margin-right: 20px;
     width: 60px;
     height: 60px;
   }
 }
-.why-choose-us .container .content .boxes .list-box .box .box-content h4 {
+.why-choose-us .container .content .boxes .box .box-content h4 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.why-choose-us .container .content .boxes .list-box .box .box-content p {
+.why-choose-us .container .content .boxes .box .box-content p {
   font-size: 16px;
   padding-bottom: 15px;
+}
+.why-choose-us .container .content .boxes .box:hover .circle {
+  background-color: #b1afaf;
+}
+.why-choose-us .container .content .boxes .box:hover .box-content {
+  color: #b1afaf;
 }
 .why-choose-us .backround-box {
   position: absolute;
@@ -885,6 +886,8 @@ header .container .menu .main-menu .login-btn {
 }
 .team-section .container .team-members .member {
   padding-top: 20px;
+  text-decoration: none;
+  color: #191919;
 }
 @media (min-width: 992px) {
   .team-section .container .team-members .member {
@@ -901,6 +904,12 @@ header .container .menu .main-menu .login-btn {
 .team-section .container .team-members .member p {
   margin-top: -5px;
   color: #6e6a6a;
+}
+.team-section .container .team-members .member:hover h4 {
+  color: #b1afaf;
+}
+.team-section .container .team-members .member:hover img {
+  opacity: 0.8;
 }
 .team-section .container .dots {
   padding-top: 30px;

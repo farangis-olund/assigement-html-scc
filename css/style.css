@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
 html, body {
+  padding: 0;
+  margin: 0;
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  padding: 0;
-  margin: 0;
 }
 html h2, body h2 {
   font-family: "DM Sans", sans-serif;
@@ -23,13 +23,11 @@ html p, body p {
 }
 
 .section-padding {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
 }
 @media (min-width: 576px) {
   .section-padding {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
   }
 }
 
@@ -75,7 +73,7 @@ html p, body p {
   font-weight: 700;
   font-size: 16px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  transition: box-shadow 0.5s ease, background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease;
   cursor: pointer;
 }
 .btn-yellow i, .btn-black i, .btn-transperent i {
@@ -103,11 +101,6 @@ html p, body p {
   background-color: #F9D783;
   border-color: #F9D783;
   color: #191919;
-}
-.btn-yellow:hover {
-  background-color: #191919;
-  border-color: #191919;
-  color: #DBDAD5;
 }
 
 .decoration {
@@ -319,7 +312,6 @@ header .container .menu .main-menu .login-btn {
 }
 
 .futures {
-  margin: 10px;
   border: 1px solid #DBDAD5;
 }
 @media (min-width: 992px) {
@@ -478,7 +470,6 @@ header .container .menu .main-menu .login-btn {
   }
 }
 .about .container .img-container .quote p {
-  font-size: 16px;
   color: #6e6a6a;
   font-weight: 500;
 }
@@ -502,17 +493,13 @@ header .container .menu .main-menu .login-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 20px;
-}
-.about .container .content .buttons .btn-black {
-  text-align: center;
+  padding-top: 40px;
 }
 .about .container .content .buttons .btn-play {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
   text-decoration: none;
   color: #191919;
   padding-top: 30px;
@@ -590,8 +577,11 @@ header .container .menu .main-menu .login-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
+  text-decoration: none;
+  color: #191919;
   padding: 20px 30px 40px 25px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .services .container .services-boxes .box-content {
@@ -626,11 +616,11 @@ header .container .menu .main-menu .login-btn {
   background-color: transparent;
   color: #191919;
 }
-.services .container .services-boxes .box-content .right-content a :hover {
+.services .container .services-boxes .box-content :hover {
   color: #b1afaf;
 }
-.services .container .services-boxes .box-content .right-content #a-vit :hover {
-  color: #ffffff;
+.services .container .services-boxes .box-content:hover .right-content {
+  color: #b1afaf;
 }
 .services .container .button {
   display: flex;
@@ -815,7 +805,6 @@ header .container .menu .main-menu .login-btn {
   text-align: right;
   text-decoration: none;
   color: #191919;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -867,6 +856,9 @@ header .container .menu .main-menu .login-btn {
 .team-section .container .title .content-center {
   display: flex;
   flex-direction: column;
+}
+.team-section .container .title .content-center .btn-yellow {
+  border: 1px solid #191919;
 }
 .team-section .container .team-members {
   display: flex;
@@ -1145,23 +1137,23 @@ header .container .menu .main-menu .login-btn {
     text-align: left;
   }
 }
-.get-update .container .section-title h2 {
-  padding-bottom: 40px;
-}
 @media (min-width: 992px) {
   .get-update .container .section-title h2 {
     padding: 0;
   }
 }
 .get-update .container .content-center {
+  text-align: center;
   gap: 16px;
+}
+.get-update .container .content-center .btn-yellow {
+  padding: 17px 30px;
 }
 .get-update .container .content-center input {
   border-radius: 35px;
   border: none;
   text-align: center;
   padding: 15px 30px;
-  width: 100%;
   margin-right: 0;
 }
 @media (min-width: 1200px) {

@@ -27,7 +27,7 @@ html, body {
 .section-padding {
     padding: 60px 15px;
       
-    @media (min-width:576px) {
+    @media (min-width:768px) {
         padding: 80px 0;
     }
 }
@@ -112,7 +112,6 @@ html, body {
     }
 }
 
-
 .btn-yellow {
     @extend %common-button-styles;
     background-color: #F9D783;
@@ -186,7 +185,8 @@ header {
                 .contact-information {
                     display: none;
                     align-items: center;
-                    @media (min-width:1200px){
+                    
+                    @media (min-width:1200px) {
                         display: flex;
                         justify-content: center;
                     }
@@ -318,6 +318,7 @@ header {
                        
             .content-center {
                 gap: 20px;
+                
                 a{
                     z-index: 2;
                 }
@@ -339,13 +340,13 @@ header {
 }
 
 .partners {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
-        @media(min-width: 768px){
+        @media(min-width: 768px) {
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
@@ -356,6 +357,7 @@ header {
 
 .futures {
     border: 1px solid #DBDAD5;
+    
     @media (min-width:992px) {
         margin: 0px 100px;
     }
@@ -364,6 +366,7 @@ header {
         grid-template-columns: 1fr;
         justify-content: center;
         gap: 20px;
+        
         @media (min-width:992px) {
             grid-template-columns: 3fr 3.5fr 0.5fr;
             gap: 100px; 
@@ -383,6 +386,7 @@ header {
                 text-align: left;
                 padding-right: 40px;
             }
+            
             h2 {
                 padding-bottom: 35px;
             }
@@ -442,12 +446,13 @@ header {
 }
 
 .about {
-    .container{
+    .container {
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
         gap: 10px;
+        
         @media (min-width:992px)  {
             display: flex;
             justify-content: space-evenly;
@@ -461,6 +466,7 @@ header {
 
         .img-container {
             position: relative;
+            
             img {
                 max-width: 100%;
                 height: auto;
@@ -582,8 +588,10 @@ header {
 .services {
     background-color: #F0EFE9;
     position: relative;
+    
     .container {
         display: block;
+        
         .section-title {
             padding-bottom: 48px;
             p {
@@ -606,15 +614,18 @@ header {
        
         
         .services-boxes{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
             padding-bottom: 50px;
             gap: 40px;
             
-            @media (min-width:992px){
-                flex-direction: row;
-                justify-content: space-between; 
+            @media (min-width:768px){
+                grid-template-columns: 1fr 1fr;   
             }
+            
+            @media (min-width:1200px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+           }
             
             #box-yellow{
                 background-color: #F9D783;
@@ -703,6 +714,7 @@ header {
         position: relative;
         display: block;
         text-align: center;
+        
         @media (min-width:1200px)  {
             display: flex;
             justify-content: space-between;
@@ -710,6 +722,7 @@ header {
             text-align: left;
             gap: 20px;
         }
+        
         @media (min-width:1400px) {
             gap: 100px;
         }
@@ -829,7 +842,7 @@ header {
             text-align: center;
             
             h2 {
-                @media (min-width:992px) {
+                @media (min-width:768px) {
                     padding-bottom: 90px;
                 }
             }
@@ -840,7 +853,7 @@ header {
             grid-template-columns: 1fr;
             gap: 30px;
             padding: 15px;
-            @media (min-width:786px) {
+            @media (min-width:768px) {
                 grid-template-columns: 1fr 1fr;
                 padding: 0; 
             }
@@ -877,8 +890,8 @@ header {
            }
         }
         .content-center {
-               @media (min-width:992px){
-                padding-top: 64px;   
+               @media (min-width:768px) {
+                padding-top: 40px;   
             }
         }
     }
@@ -1007,10 +1020,12 @@ header {
         padding-left: 20px;
         padding-right: 20px;
         background-color: #ffffff;
+        
         @media (min-width:992px) {
             padding-left: 100px;
             padding-right: 100px;
         }
+        
         .boxes {
             display: flex;
             flex-direction: column;
@@ -1113,7 +1128,7 @@ header {
                 
             }
  
-             .section-title {
+            .section-title {
                 h2 {
                     padding-bottom: 48px;
                     @media (min-width:992px) {
@@ -1121,10 +1136,10 @@ header {
                     }
                 }
               
-             }
-             .browse-article {
+            }
+            .browse-article {
                 margin-bottom: 15px;
-             }  
+            }  
         }
         .boxes {
             display: block;
@@ -1287,7 +1302,6 @@ header {
             gap: 105px;
             align-items: left;
             text-align: left;
-           
         }
         
         .logo {
@@ -1307,7 +1321,7 @@ header {
                 padding-top: 29px;
                 text-align: center;
                 
-                @media (min-width:992px){
+                @media (min-width:992px) {
                     text-align: left;
                     margin-right: 60px;
                 }
@@ -1334,18 +1348,19 @@ header {
             .box {
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-start;
                 gap: 15px;
                 padding-bottom: 20px;
                 
                 @media (min-width:992px) {
                     padding-bottom: 0;
-                    h4 {
-                        padding-bottom: 10px;
-                    }
                 }
                 
                 h4 {
                     padding-bottom: 0;
+                    @media (min-width:992px) {
+                       padding-bottom: 10px;
+                     }
                 }
                 a {
                     text-decoration: none;
@@ -1367,7 +1382,7 @@ header {
    
 }
 
-.bootom-footer {
+.bottom-footer {
     padding-top: 20px;
     padding-bottom: 15px;
     background-color: #0E1021;

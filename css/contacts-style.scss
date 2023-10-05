@@ -1,28 +1,32 @@
 
-.showcase-contacts{
+.showcase-contacts {
     padding-bottom: 80px;
     padding-top: 60px;
-    .container{
+    
+    .container {
        
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        
         .nav-contact {
             display: flex;
-            a{
+            a {
                 padding-right: 10px;
                 text-decoration: none;
                 color: #6e6a6a;
                 z-index: 2;
-                &.active{
+                
+                &.active {
                 color: #191919;
                 font-weight: bold;
-            }
-            &:hover{
-                color: #191919;
-                font-weight: bold;
-            }
+                }
+            
+                &:hover {
+                    color: #191919;
+                    font-weight: bold;
+                }
             }
         }
         
@@ -30,14 +34,15 @@
     }
 }
 
-.contact-detail{
+.contact-detail {
     
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        
         @media (min-width:992px) {
             display: flex;
             flex-direction: row;
@@ -46,7 +51,7 @@
             gap: 0;
         }
 
-        .box{
+        .box {
             display: flex;
             border: 1px solid #DBDAD5;
             padding: 20px;
@@ -62,32 +67,39 @@
             @media (min-width:1400px) {
                 padding: 50px 120px 40px 60px;
             }
-            i{
+            
+            i {
                 font-size: 55px;
                 padding-right: 15px;    
-             }
-            .content{
+            }
+            
+            .content {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
-                p{margin-bottom: 1px;}
+                
+                p {
+                    margin-bottom: 1px;
+                }
             }
         }
     }
 }
 
-.contacts{
-     padding-bottom: 80px; 
-    .container{
+.contacts {
+    padding-bottom: 80px; 
+    
+    .container {
        background-color: #F0EFE9;
        text-align: center;
         
         @media (max-width:768px) {
             padding: 15px;
         }
-       h2{
+       
+        h2 {
         padding-bottom: 32px;
-       }
+        }
         .contact-form {
             
             width: 900px; 
@@ -112,20 +124,23 @@
                     }
                 }   
             }
+            
             @media (max-width:768px) {
               
-                    max-width: 100%;
-                    padding: 10px; 
-                    input,
-                    textarea {
-                        padding: 10px;
-                    }
+                max-width: 100%;
+                padding: 10px; 
+                
+                input,
+                textarea {
+                    padding: 10px;
+                }
             
                 
             }
         
         }
-        #btn-submit{
+        
+        #btn-submit {
             padding-top: 44px;
         }
     }

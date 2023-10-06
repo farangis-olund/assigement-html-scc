@@ -986,12 +986,17 @@ header .container .menu .main-menu .login-btn {
 }
 .testimonial .container .boxes .box .customer {
   display: block;
-  padding-top: 30px;
+  padding-top: 0;
   gap: 0;
 }
 .testimonial .container .boxes .box .customer img {
   width: 70px;
   height: 70px;
+}
+@media (min-width: 768px) {
+  .testimonial .container .boxes .box .customer {
+    padding-top: 30px;
+  }
 }
 @media (min-width: 1200px) {
   .testimonial .container .boxes .box .customer {
@@ -1067,7 +1072,6 @@ header .container .menu .main-menu .login-btn {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 30px;
   padding-top: 43px;
 }
 @media (min-width: 992px) {
@@ -1076,12 +1080,14 @@ header .container .menu .main-menu .login-btn {
     justify-content: space-between;
     align-items: left;
     text-align: left;
+    gap: 30px;
   }
 }
 .article-news .container .boxes .box {
   display: block;
   text-decoration: none;
   color: #191919;
+  padding-bottom: 30px;
 }
 .article-news .container .boxes .box .img-content {
   position: relative;
@@ -1117,7 +1123,12 @@ header .container .menu .main-menu .login-btn {
   font-weight: 700;
 }
 .article-news .container .boxes .box .subtitle {
-  padding-top: 28px;
+  padding-top: 15px;
+}
+@media (min-width: 992px) {
+  .article-news .container .boxes .box .subtitle {
+    padding-top: 28px;
+  }
 }
 .article-news .container .dots {
   padding-top: 60px;

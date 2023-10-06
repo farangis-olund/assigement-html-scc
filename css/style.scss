@@ -1058,12 +1058,16 @@ header {
                 }
                 .customer {
                     display: block;
-                    padding-top: 30px;
+                    padding-top: 0;
                     gap: 0;
                     
                     img {
                        width: 70px;
                        height: 70px;
+                    }
+
+                    @media (min-width:768px) {
+                        padding-top: 30px;
                     }
 
                     @media (min-width:1200px) {
@@ -1146,19 +1150,21 @@ header {
             justify-content: center;
             align-items: center;
             text-align: center;
-            gap: 30px;
             padding-top: 43px;
+            
             @media (min-width:992px) {
                 display: flex;
                 justify-content: space-between;
                 align-items: left;
                 text-align: left;
+                gap: 30px;
             }
         
             .box {
-               display: block;
-               text-decoration: none;
-               color: #191919;
+                display: block;
+                text-decoration: none;
+                color: #191919;
+                padding-bottom: 30px;
                 .img-content {
                     position: relative;
                     display: block;
@@ -1194,7 +1200,10 @@ header {
                 }
 
                 .subtitle {
-                   padding-top: 28px;   
+                     padding-top: 15px;   
+                     @media (min-width:992px) {
+                        padding-top: 28px;   
+                    }   
                 }
                 
                 @extend %hover-effect;

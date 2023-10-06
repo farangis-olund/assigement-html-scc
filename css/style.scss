@@ -952,8 +952,7 @@ header {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 30px;
-                padding-top: 0;
-                
+                padding-top: 90px;    
             }
 
             @media (min-width:1200px) {
@@ -962,12 +961,9 @@ header {
             }
             
             .member {
-                padding-top: 20px;
                 text-decoration: none;
                 color: #191919;
-                @media (min-width:992px) {
-                    padding-top: 95px;
-                }
+               
                 
                 img {
                     max-width:100%;
@@ -1137,6 +1133,7 @@ header {
                     padding-bottom: 48px;
                     @media (min-width:992px) {
                         padding: 0;
+                        margin: 0;
                     }
                 }
               
@@ -1256,7 +1253,7 @@ header {
         
         .content-center {
             text-align: center;
-            gap: 16px;
+            gap: 25px;
             
             .btn-yellow {
                 padding: 17px 30px;
@@ -1272,7 +1269,6 @@ header {
                 @media (min-width:1200px) {
                     width: 308px;
                     text-align: left;
-                    margin-right: 16px;
                 }
                 
                 &:hover {
@@ -1332,7 +1328,7 @@ header {
                 
                 @media (min-width:992px) {
                     text-align: left;
-                    margin-right: 60px;
+                    margin-right: 20px;
                 }
             }
         }
